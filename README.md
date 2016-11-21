@@ -8,6 +8,7 @@ Behance API Package for Laravel 5.3
 Install this package through Composer. Edit your project's `composer.json` Add one of the two below:
   
   -- Not an avalible method  of installation -- Method addintion TBA 
+  
  ` "require": {
     "codyreeves/behance": "dev-master"
   }`
