@@ -1,0 +1,23 @@
+{
+    "name": "CodyReeves/Behance",
+    "description": "",
+    "authors": [
+        {
+            "name": "CodyReeves",
+            "email": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "5.*.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "codyreeves\\Behance\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
