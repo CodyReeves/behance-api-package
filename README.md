@@ -10,16 +10,16 @@ Install this package through Composer. Edit your project's `composer.json` Add o
   -- Not an avalible method  of installation -- Method addintion TBA 
  ` "require": {
     "codyreeves/behance": "dev-master"
-  }
+  }`
   
   or 
   
-  "repositories": [
+  `"repositories": [
     {
         "type": "vcs",
     	"url": "https://github.com/CodyReeves/behance-api-package"
     }
-  ]
+  ]`
 
 Update Composer:
 
