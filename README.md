@@ -1,7 +1,7 @@
-Behance API
+Behance API -- Development in Progress 
 =======
 
-Behance API Package for Laravel 4
+Behance API Package for Laravel 5.3
 
 ## Installation
 
