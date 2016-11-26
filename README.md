@@ -5,32 +5,45 @@ Behance API Package for Laravel 5.3
 
 ## Installation
 
-Begin by installing this package through Composer. Edit your project's `composer.json` file to require `codyreeves/behance`.
-
-  "require": {
+Install this package through Composer. Edit your project's `composer.json`, Add this below:
+  
+  
+ ```
+ "require": {
     "codyreeves/behance": "dev-master"
   }
+ ```
+  
+  
+ ```
+ "repositories": [
+    {
+        "type": "vcs"
+    	"url": "https://github.com/CodyReeves/behance-api-package"
+    }
+  ]
+```
 
-Next, update Composer from the Terminal:
+Update Composer:
 
     composer update
 
-Once this operation completes, you'll need to add the service provider. Open `app/config/app.php`, and add a new item to the providers array.
+Add the service provider. Open `app/config/app.php`, and add a new item to the Aliases array.
 
-    'CodyReeves\Behance\BehanceServiceProvider',
+    'Behance' => CodyReeves\Behance\BehanceServiceProvider::class,
 
-Finally, you'll need to publish the config file. Add the following command in Terminal.
+Publish the config file. Enter the following command in Terminal.
 
     php artisan config:publish codyreeves/behance
 
-Then open up `app/config/packages/codyreeves/behance/keys.php` and add your Behance Client ID and Client Secret. And that's it! You're all set to go.
+Lastly, open `app/config/packages/codyreeves/behance/keys.php` and add your Behance Client ID and Client Secret.
 
 ## Usage
 
-Here's an example of how to get the featured projects from behance.
+Example of how to get the featured projects:
 
 ```php
 print_r(Behance::searchProjects());
 ```
 
-For further info on using the Behance API, be sure to checkout: https://github.com/behance/network_api_php
+Info on using the Behance API: https://github.com/behance/network_api_php
