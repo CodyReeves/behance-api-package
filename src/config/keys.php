@@ -1,6 +1,6 @@
 <?php
 
 return array(
-	'id' => '',
-	'secret' => ''
+  'id' => env('BEHANCE_ID'),
+  'secret' => env('BEHANCE_SECRET')
 );
