@@ -28,9 +28,9 @@ Update Composer:
 
     composer update
 
-Add the service provider. Open `app/config/app.php`, and add a new item to the providers array.
+Add the service provider. Open `app/config/app.php`, and add a new item to the Aliases array.
 
-    'CodyReeves\Behance\BehanceServiceProvider',
+    'Behance' => CodyReeves\Behance\BehanceServiceProvider::class,
 
 Publish the config file. Enter the following command in Terminal.
 
