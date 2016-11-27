@@ -32,11 +32,6 @@ Add the service provider. Open `app/config/app.php`, and add a new item to the A
 
     'Behance' => CodyReeves\Behance\BehanceServiceProvider::class,
 
-Publish the config file. Enter the following command in Terminal.
-
-    php artisan config:publish codyreeves/behance
-
-Lastly, open `app/config/packages/codyreeves/behance/keys.php` and add your Behance Client ID and Client Secret.
 
 ## Usage
 
